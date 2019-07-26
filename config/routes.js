@@ -22,7 +22,9 @@ async function register(req, res) {
     const newUser = await Users.addUser(user);
     res.status(201).json(newUser);
   } catch (error) {
-    res.status(500).json({ message: "User cannot be created", error });
+    res
+      .status(500)
+      .json({ message: "User cannot be created", error: error.message });
   }
 }
 
