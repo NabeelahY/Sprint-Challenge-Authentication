@@ -8,7 +8,6 @@ const Login = props => {
   });
 
   const userLogin = user => {
-    console.log(user);
     return axios
       .post("http://localhost:3300/api/login", user)
       .then(res => {

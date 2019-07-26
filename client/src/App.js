@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, NavLink, withRouter, Link } from "react-router-dom";
+import { Route, NavLink, withRouter } from "react-router-dom";
 import "./App.css";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
@@ -22,9 +22,8 @@ function App(props) {
         <NavLink to="/login">
           <div>Login</div>
         </NavLink>
-        <Link>
-          <div onClick={() => logout()}>Logout</div>
-        </Link>
+
+        <div onClick={() => logout()}>Logout</div>
       </nav>
       <Route exact path="/" component={Home} />
       <Route path="/register" component={Signup} />

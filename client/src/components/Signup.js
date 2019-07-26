@@ -17,7 +17,7 @@ const Signup = props => {
       })
       .then(res => res)
       .catch(err => err)
-      .finally(() => props.history.push("/"));
+      .finally(() => props.history.push("/login"));
   };
 
   return (

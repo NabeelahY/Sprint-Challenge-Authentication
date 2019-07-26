@@ -7,16 +7,7 @@ beforeEach(async () => {
 });
 
 describe("Authentication", () => {
-  // it("Users are able to login", async () => {
-  //   return request
-  //     .post("/api/login")
-  //     .send({
-  //       username: "Jim",
-  //       password: "pass"
-  //     })
-  //     .expect(200);
-  // });
-  it("Users are able to sign up",  () => {
+  it("Users are able to sign up", () => {
     return request
       .post("/api/register")
       .send({
@@ -26,8 +17,25 @@ describe("Authentication", () => {
       .expect(201)
       .expect("Content-Type", /json/);
   });
+  it("Users are able to login", async () => {
+    return request
+      .post("/api/register")
+      .send({
+        username: "Pamela",
+        password: "pass"
+      })
+      .then(res => {
+        return request
+          .post("/api/login")
+          .send({
+            username: "Pamela",
+            password: "pass"
+          })
+          .expect(200);
+      });
+  });
 
-  it("Gives error message when username or password is not inputed",  () => {
+  it("Gives error message when username or password is not inputed", () => {
     return request
       .post("/api/register")
       .send({
