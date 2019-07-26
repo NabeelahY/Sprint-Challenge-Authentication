@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+  margin: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  border-bottom: 1px #88ccff solid;
+}
+
+a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+nav > div {
+  margin: 0 1rem;
+  color: black;
+}
+
+a:hover {
+  color: coral;
+}
+
+nav > div:hover {
+  color: coral;
+}
+
+form {
+  width: 60%;
+  display: block;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  padding: 1rem 0;
+  margin: 0.5rem 0;
+  border: 1px coral solid;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  text-align: center;
+}
+input:focus {
+  border: 2px coral solid;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  background-color: #88ccff;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0fa8eb;
+}
+
+.list {
+  width: 50%;
+  padding: 1rem;
+  margin: 0.5rem auto;
+  background-color: #88ccff;
+}
