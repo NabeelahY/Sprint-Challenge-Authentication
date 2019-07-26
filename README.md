@@ -29,9 +29,20 @@ Implement an User Authentication System in order to access the jokes from the Jo
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 1. What is the purpose of using _sessions_?
+
+- HTTP requests are stateless so sessions are used to persist user data in the server so the userdoes not have to authenticate everytime
+
 1. What does bcrypt do to help us store passwords in a secure manner.
+
+- Bcrypt hashes the passwords with a salt
+
 1. What does bcrypt do to slow down attackers?
+
+- Bcrypt slows the hashing process of a password and adds salt to it to make almost impossible for an attacker to succed with a brute force attack.
+
 1. What are the three parts of the JSON Web Token?
+
+- Header, Payload and Signature
 
 ## Project Set Up
 
@@ -48,9 +59,9 @@ Follow these steps for completing your project:
 
 - [x] `cd` into the root of the project and run `yarn` to install dependencies.
 - [x] Once you have your `node_modules` go ahead and run `yarn server` or `npm run server` to start your node server.
-- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
 - [x] Add your Project Manager as a Reviewer on the Pull-request
-- [x] PM then will count the HW as done by  merging the branch back into master.
+- [x] PM then will count the HW as done by merging the branch back into master.
 
 Helpful Tip on Testing this Project:
 
