@@ -7,16 +7,16 @@ beforeEach(async () => {
 });
 
 describe("Authentication", () => {
-//   it("Users are able to login", async () => {
-//     return request
-//       .post("/api/login")
-//       .send({
-//         username: "Jim",
-//         password: "pass"
-//       })
-//       .expect(200);
-//   });
-  it("Users are able to sign up", async () => {
+  // it("Users are able to login", async () => {
+  //   return request
+  //     .post("/api/login")
+  //     .send({
+  //       username: "Jim",
+  //       password: "pass"
+  //     })
+  //     .expect(200);
+  // });
+  it("Users are able to sign up",  () => {
     return request
       .post("/api/register")
       .send({
@@ -27,7 +27,7 @@ describe("Authentication", () => {
       .expect("Content-Type", /json/);
   });
 
-  it("Gives error message when username or password is not inputed", async () => {
+  it("Gives error message when username or password is not inputed",  () => {
     return request
       .post("/api/register")
       .send({
