@@ -16,7 +16,16 @@ a {
   color: black;
 }
 
+nav > div {
+  margin: 0 1rem;
+  color: black;
+}
+
 a:hover {
+  color: coral;
+}
+
+nav > div:hover {
   color: coral;
 }
 
